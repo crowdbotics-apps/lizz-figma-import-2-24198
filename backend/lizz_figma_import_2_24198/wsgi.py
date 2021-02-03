@@ -11,6 +11,6 @@ import os
 
 from django.core.wsgi import get_wsgi_application
 
-os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'lizz_figma_import_2_24198.settings')
+os.environ.setdefault("DJANGO_SETTINGS_MODULE", "lizz_figma_import_2_24198.settings")
 
 application = get_wsgi_application()
