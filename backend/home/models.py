@@ -50,6 +50,13 @@ class HomePage(models.Model):
 class Test2(models.Model):
     "Generated Model"
     test2 = models.BigIntegerField()
+    test = models.ForeignKey(
+        "home.Test",
+        on_delete=models.CASCADE,
+        null=True,
+        blank=True,
+        related_name="test2_test",
+    )
 
 
 class Test(models.Model):
